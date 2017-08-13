@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+
+		<link rel="stylesheet" href="css/libs.min.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+
+
+		<header class="header">
+
+			<div class="header__top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-md-7 hidden-sm hidden-xs">
+							<ul class="header__list">
+								<li class="list__item">
+									<a href="#" class="list__item-link link-btn">Акции</a>
+								</li>
+								<li class="list__item">
+									<a href="#" class="list__item-link dropdown">Читать</a>
+									<ul class="innerList">
+										<li class="innerList__item">
+											<a href="#" class="innerList__item-link">Читать-1</a>
+										</li>
+										<li class="innerList__item">
+											<a href="#" class="innerList__item-link">Читать-2</a>
+										</li>
+										<li class="innerList__item">
+											<a href="#" class="innerList__item-link">Читать-3</a>
+										</li>
+									</ul>
+								</li>
+								<li class="list__item">
+									<a href="#" class="list__item-link dropdown">Дополнительно</a>
+									<ul class="innerList">
+										<li class="innerList__item">
+											<a href="#" class="innerList__item-link">Дополнительно-1</a>
+										</li>
+										<li class="innerList__item">
+											<a href="#" class="innerList__item-link">Дополнительно-2</a>
+										</li>
+										<li class="innerList__item">
+											<a href="#" class="innerList__item-link">Дополнительно-3</a>
+										</li>
+									</ul>
+								</li>
+								<li class="list__item">
+									<a href="#" class="list__item-link">Сотрудничество</a>
+								</li>
+								<li class="list__item">
+									<a href="#" class="list__item-link">Контакты</a>
+								</li>
+							</ul><!-- //.header__list -->
+						</div><!-- //.col -->
+
+						<div class="hidden-lg hidden-md col-sm-8 col-xs-5">
+							<div class="mobile__logo">
+								<img src="img/mobile_logo.png" alt="logo">
+							</div>
+							<div class="mobile__menu">
+								<span class="burger"></span>
+							</div>
+							<ul class="mobile__list">
+								<li class="mobile__item">
+									<span class="close"></span>
+								</li>
+								<li class="mobile__item">
+									<a href="#" class="mobile__item-link">Акции</a>
+								</li>
+								<li class="mobile__item">
+									<a href="#" class="mobile__item-link dropdown open">Читать</a>
+									<ul class="innerList">
+										<li class="innerList__item">
+											<a href="#" class="innerList__item-link">Читать-1</a>
+										</li>
+										<li class="innerList__item">
+											<a href="#" class="innerList__item-link">Читать-2</a>
+										</li>
+										<li class="innerList__item">
+											<a href="#" class="innerList__item-link">Читать-3</a>
+										</li>
+									</ul>
+								</li>
+								<li class="mobile__item">
+									<a href="#" class="mobile__item-link dropdown open">Дополнительно</a>
+									<ul class="innerList">
+										<li class="innerList__item">
+											<a href="#" class="innerList__item-link">Дополнительно-1</a>
+										</li>
+										<li class="innerList__item">
+											<a href="#" class="innerList__item-link">Дополнительно-2</a>
+										</li>
+										<li class="innerList__item">
+											<a href="#" class="innerList__item-link">Дополнительно-3</a>
+										</li>
+									</ul>
+								</li>
+								<li class="mobile__item">
+									<a href="#" class="mobile__item-link">Сотрудничество</a>
+								</li>
+								<li class="mobile__item">
+									<a href="#" class="mobile__item-link">Контакты</a>
+								</li>
+								<li class="mobile__item">
+									<a href="#" class="mobile__item-link">Мебель</a>
+								</li>
+								<li class="mobile__item">
+									<a href="#" class="mobile__item-link">Кухня</a>
+								</li>
+								<li class="mobile__item">
+									<a href="#" class="mobile__item-link">Все для дома</a>
+								</li>
+								<li class="mobile__item">
+									<a href="#" class="mobile__item-link">Освещение</a>
+								</li>
+								<li class="mobile__item">
+									<a href="#" class="mobile__item-link">Часы и декор</a>
+								</li>
+								<li class="mobile__item">
+									<a href="#" class="mobile__item-link">Деловой стиль</a>
+								</li>
+								<li class="mobile__item">
+									<a href="#" class="mobile__item-link">Активный отдых</a>
+								</li>
+								<li class="mobile__item">
+									<a href="#" class="mobile__item-link">Детский мир</a>
+								</li>
+							</ul><!-- //.mobile__list -->
+						</div><!-- //.col -->
+
+						<div class="col-lg-2 col-lg-offset-4 col-md-3 col-md-offset-2 col-sm-4 col-xs-7">
+							<div class="header__menu">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="#" class="menu__item-link">
+											<img src="img/search.png" alt="search">
+										</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__item-link dropdown">
+											<img src="img/user.png" alt="user">
+										</a>
+										<ul class="innerList">
+											<li class="innerList__item">
+												<a href="#" class="innerList__item-link">Авторизоваться</a>
+											</li>
+											<li class="innerList__item">
+												<a href="#" class="innerList__item-link">Выйти</a>
+											</li>
+										</ul>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__item-link">
+											<img src="img/basket.png" alt="basket">
+											<span class="count">0</span>
+										</a>
+									</li>
+								</ul><!-- //.menu__list -->
+							</div><!-- //.header__menu -->
+						</div><!-- //.col -->
+					</div><!-- //.row -->
+				</div><!-- //.container -->
+			</div><!-- //.header__top -->
+
+			<div class="header__info">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-3 col-sm-8 hidden-xs">
+							<div class="header__logo">
+								<a href="#">
+									<img src="img/logo.png" alt="HM Store">
+								</a>
+							</div>
+						</div><!-- //.col -->
+						
+						<div class="col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-4 hidden-sm hidden-xs">
+							<div class="header__schedule">
+								<div class="schedule__title">
+									График работы:
+								</div>
+								<div class="schedule__day">
+									пн-сб: 09:00-20:00
+								</div>
+								<div class="schedule__day">
+									вс: 10:00-17:00
+								</div>
+							</div>
+						</div><!-- //.col -->
+
+						<div class="col-lg-2 col-md-3 hidden-xs">
+							<div class="header__call">
+								<div class="call">
+									<a href="#callback" class="call__link popup-with-move-anim">Заказать обратный звонок</a>
+								</div>
+								<div class="phone__number">
+									+38 (044) 501 14 41
+								</div>
+								<div class="phone__number">
+									+38 (057) 784 07 00
+								</div>
+							</div>
+						</div><!-- //.col -->
+
+					</div><!-- //.row -->
+				</div><!-- //.container -->
+			</div><!-- //.header__info -->
+
+			<nav class="nav">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 hidden-sm hidden-xs">
+							<ul class="nav__list">
+								<li class="nav__item">
+									<a href="#" class="nav__item-link furniture">
+										<div class="nav__item-icon"></div>
+										<div class="nav__item-title">
+											Мебель
+										</div>
+									</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__item-link kitchen">
+										<div class="nav__item-icon"></div>
+										<div class="nav__item-title">
+											Кухня
+										</div>
+									</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__item-link home">
+										<div class="nav__item-icon"></div>
+										<div class="nav__item-title">
+											Все для дома
+										</div>
+									</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__item-link light">
+										<div class="nav__item-icon"></div>
+										<div class="nav__item-title">
+											Освещение
+										</div>
+									</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__item-link clock">
+										<div class="nav__item-icon"></div>
+										<div class="nav__item-title">
+											Часы и декор
+										</div>
+									</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__item-link style">
+										<div class="nav__item-icon"></div>
+										<div class="nav__item-title">
+											Деловой стиль
+										</div>
+									</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__item-link rest">
+										<div class="nav__item-icon"></div>
+										<div class="nav__item-title">
+											Активный отдых
+										</div>
+									</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__item-link world">
+										<div class="nav__item-icon"></div>
+										<div class="nav__item-title">
+											Детский мир
+										</div>
+									</a>
+								</li>
+							</ul><!-- //.nav__list -->
+						</div><!-- //.col -->
+					</div><!-- //.row -->
+				</div><!-- //.container -->
+			</nav><!-- //.nav -->
+
+		</header><!-- //.header -->
+
+		<section class="breadcrumbs">
+			<div class="container">
+				<div class="col-lg-12 col-md-12 hidden-sm hidden-xs">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item">
+							<a href="#" class="breadcrumbs__link">Главная</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a href="#" class="breadcrumbs__link">Каталог</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a href="#" class="breadcrumbs__link">Кухня</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a href="#" class="breadcrumbs__link">Кухонные аксессуары</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a href="#" class="breadcrumbs__link active">Термокружки, термосы</a>
+						</li>
+					</ul><!-- //.breadcrumbs__list -->
+				</div><!-- //.col -->
+			</div><!-- //.container -->
+		</section><!-- //.breadcrumbs -->
+
+		<section class="main">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-9 col-md-9 col-sm-11">
+						<div class="row">
+							<div class="title">
+								<h1 class="title__head">
+									Книжный шкаф Calligaris Lib, Double-sided tall bookcase, 
+									Finish glossy white and Glass smoked grey 
+								</h1>
+								<span class="title__code">PN: AE113AWBPJG1C7BK3D01</span>
+							</div>
+							<div class="price">
+								<div class="price__new">
+									946 470,<sup>uah</sup>
+								</div>
+								<div class="price__old">998 269,<sup>uah</sup></div>
+							</div>
+							<div class="button">
+								<a href="#" class="button__pay">Купить</a>
+								<a href="#order" class="button__order popup-with-move-anim">Быстрый заказ</a>
+							</div>
+						</div><!-- //.row -->
+
+						<div class="row">
+							<div class="slider">
+								<div class="slider__item"><img src="img/slider_bg.jpg" alt="slider"></div>
+								<div class="slider__item"><img src="img/slider_bg.jpg" alt="slider"></div>
+								<div class="slider__item"><img src="img/slider_bg.jpg" alt="slider"></div>
+								<div class="slider__item"><img src="img/slider_bg.jpg" alt="slider"></div>
+								<div class="slider__item"><img src="img/slider_bg.jpg" alt="slider"></div>
+								<div class="slider__item"><img src="img/slider_bg.jpg" alt="slider"></div>
+								<div class="slider__item"><img src="img/slider_bg.jpg" alt="slider"></div>
+								<div class="slider__item"><img src="img/slider_bg.jpg" alt="slider"></div>
+							</div>
+							<div class="sliderNav">
+								<div class="sliderNav__item"><img src="img/slider_nav.jpg" alt="slider-nav"></div>
+								<div class="sliderNav__item"><img src="img/slider_nav.jpg" alt="slider-nav"></div>
+								<div class="sliderNav__item"><img src="img/slider_nav.jpg" alt="slider-nav"></div>
+								<div class="sliderNav__item"><img src="img/slider_nav.jpg" alt="slider-nav"></div>
+								<div class="sliderNav__item"><img src="img/slider_nav.jpg" alt="slider-nav"></div>
+								<div class="sliderNav__item"><img src="img/slider_nav.jpg" alt="slider-nav"></div>
+								<div class="sliderNav__item"><img src="img/slider_nav.jpg" alt="slider-nav"></div>
+								<div class="sliderNav__item"><img src="img/slider_nav.jpg" alt="slider-nav"></div>
+							</div>
+						</div><!-- //.row -->
+
+						<div class="row">
+							<ul class="sub__menu">
+								<li class="sub__item">
+									<a class="sub__item-link" href="#">Оплата и доставка</a>
+								</li>
+								<li class="sub__item">
+									<a class="sub__item-link" href="#">Смотреть видео</a>
+								</li>
+								<li class="sub__item">
+									<a class="sub__item-link" href="#">Читать обзор</a>
+								</li>
+								<li class="sub__item">
+									<a class="sub__item-link" href="#">Акция</a>
+								</li>
+							</ul>
+							<ul class="social">
+								<li class="social__item">
+									<a href="#" class="social__item-link">
+										<img src="img/social/facebook.png" alt="facebook">
+									</a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__item-link">
+										<img src="img/social/vk.png" alt="vk">
+									</a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__item-link">
+										<img src="img/social/google.png" alt="google">
+									</a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__item-link">
+										<img src="img/social/twitter.png" alt="twitter">
+									</a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__item-link">
+										<img src="img/social/plus.png" alt="plus">
+									</a>
+								</li>
+							</ul><!-- //.social -->
+						</div><!-- //.row -->
+
+						<div class="row">
+							<div class="tab__wrapper">
+								<ul class="tab__menu">
+									<li class="tab__item is-active">
+										<img class="tab__item-icon" src="img/tab_icon1.png" alt="icon">
+										<div class="tab__item-title">Описание</div>
+									</li>
+									<li class="tab__item">
+										<img class="tab__item-icon" src="img/tab_icon2.png" alt="icon">
+										<div class="tab__item-title">Гарантия</div>
+									</li>
+									<li class="tab__item">
+										<img class="tab__item-icon" src="img/tab_icon3.png" alt="icon">
+										<div class="tab__item-title">Дизайнер</div>
+									</li>
+									<li class="tab__item">
+										<img class="tab__item-icon" src="img/tab_icon4.png" alt="icon">
+										<div class="tab__item-title">Бренд</div>
+									</li>
+								</ul><!-- //.tab__menu -->
+								<div class="tab__content">
+									<div class="content__item">
+										Описание <br>
+										Одна линия, много возможностей. Cерия Lirio Nick-Knack от Philips, новый торшер, который вдохновляет, идея светильника начинается с прямой линии, Lirio Nick-Knack могут быть скручены в 16 различных положениях. Доступные напольные светильники Lirio Nick-Knack выполнены в 5 ярких цветах (красный, жёлтый, синий, белый, чёрный), это игривые торшеры приносят эффект прямого и отраженного освещения, с дизайнерскими светильниками Lirio Nick-Knack вы можете читать книгу или просто создать приятную атмосферу в вашем доме. Сочетая элегантный дизайн с LED лампой, Lirio Nick-Knack является одной из первых линий большой истории вашего дома.
+									</div>
+									<div class="content__item">
+										Гарантия <br>
+										Одна линия, много возможностей. Cерия Lirio Nick-Knack от Philips, новый торшер, который вдохновляет, идея светильника начинается с прямой линии, Lirio Nick-Knack могут быть скручены в 16 различных положениях. Доступные напольные светильники Lirio Nick-Knack выполнены в 5 ярких цветах (красный, жёлтый, синий, белый, чёрный), это игривые торшеры приносят эффект прямого и отраженного освещения, с дизайнерскими светильниками Lirio Nick-Knack вы можете читать книгу или просто создать приятную атмосферу в вашем доме. Сочетая элегантный дизайн с LED лампой, Lirio Nick-Knack является одной из первых линий большой истории вашего дома.
+									</div>
+									<div class="content__item">
+										Дизайнер <br>
+										Одна линия, много возможностей. Cерия Lirio Nick-Knack от Philips, новый торшер, который вдохновляет, идея светильника начинается с прямой линии, Lirio Nick-Knack могут быть скручены в 16 различных положениях. Доступные напольные светильники Lirio Nick-Knack выполнены в 5 ярких цветах (красный, жёлтый, синий, белый, чёрный), это игривые торшеры приносят эффект прямого и отраженного освещения, с дизайнерскими светильниками Lirio Nick-Knack вы можете читать книгу или просто создать приятную атмосферу в вашем доме. Сочетая элегантный дизайн с LED лампой, Lirio Nick-Knack является одной из первых линий большой истории вашего дома.
+									</div>
+									<div class="content__item">
+										Бренд <br>
+										Одна линия, много возможностей. Cерия Lirio Nick-Knack от Philips, новый торшер, который вдохновляет, идея светильника начинается с прямой линии, Lirio Nick-Knack могут быть скручены в 16 различных положениях. Доступные напольные светильники Lirio Nick-Knack выполнены в 5 ярких цветах (красный, жёлтый, синий, белый, чёрный), это игривые торшеры приносят эффект прямого и отраженного освещения, с дизайнерскими светильниками Lirio Nick-Knack вы можете читать книгу или просто создать приятную атмосферу в вашем доме. Сочетая элегантный дизайн с LED лампой, Lirio Nick-Knack является одной из первых линий большой истории вашего дома.
+									</div>
+								</div><!-- //.tab__content -->
+							</div><!-- //.tab__wrapper -->
+
+							<div class="download">
+								<ul class="download__list">
+									<li class="download__item">
+										<a class="download__item-link" href="#">
+											<span>Скачать</span> &#171;Брошюра для кресла Herman Miller Aeron_EN.pdf&#187;<span>, (4,3 MB)</span>
+										</a>
+									</li>
+									<li class="download__item">
+										<a class="download__item-link" href="#">
+											<span>Скачать</span> &#171;Продукт-лист для кресла Herman Miller Aeron_EN.pdf&#187;<span>, (7 MB)</span>
+										</a>
+									</li>
+									<li class="download__item">
+										<a class="download__item-link" href="#">
+											<span>Скачать</span> &#171;Инструкция по разборке кресла Herman Miller Aeron_EN.pdf&#187;<span>, (5,3 MB)</span>
+										</a>
+									</li>
+									<li class="download__item">
+										<a class="download__item-link" href="#">
+											<span>Скачать</span> &#171;Таблица размерных категорий кресла Herman Miller Aeron_EN.pdf&#187;<span>, (7 MB)</span>
+										</a>
+									</li>
+								</ul><!-- //.download__list -->
+							</div><!-- //.download -->
+						</div><!-- //.row -->
+					</div><!-- //.col -->
+					
+					<div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+						<div class="sitebar">
+							<div class="button">
+								<a href="#" class="button__order">Перейти в каталог</a>
+							</div>
+						</div><!-- //.sitebar -->
+
+						<ul class="sitebar-list">
+							<li class="list__item">
+								<a  class="list__item-link open" href="#">Кухня</a>
+								<ul class="inner-list">
+									<li class="inner__item">
+										<a class="inner__item-link open" href="#">Техника для кухни</a>
+										<ul class="inner2-list">
+											<li class="inner2__item">
+												<a class="inner2__item-link" href="#">Холодильники</a>
+											</li>
+											<li class="inner2__item">
+												<a class="inner2__item-link" href="#">Газовые плиты</a>
+											</li>
+											<li class="inner2__item">
+												<a class="inner2__item-link" href="#">Микроволновые печи</a>
+											</li>
+										</ul>
+									</li>
+									<li class="inner__item">
+										<a class="inner__item-link open" href="#">Кухонные аксессуары</a>
+										<ul class="inner2-list">
+											<li class="inner2__item">
+												<a class="inner2__item-link" href="#">Венчики, кисти</a>
+											</li>
+											<li class="inner2__item">
+												<a class="inner2__item-link" href="#">Терки</a>
+											</li>
+											<li class="inner2__item">
+												<a class="inner2__item-link" href="#">Посуда для микроволновой печи</a>
+											</li>
+										</ul>
+									</li>
+									<li class="inner__item">
+										<a class="inner__item-link" href="#">Столовая посуда</a>
+									</li>
+								</ul>
+							</li>
+						</ul><!-- //.sitebar-list -->
+
+						<ul class="sitebar-list">
+							<li class="list__item">
+								<a  class="list__item-link open" href="#">Мебель для дома</a>
+								<ul class="inner-list">
+									<li class="inner__item">
+										<a class="inner__item-link open" href="#">Мягкая мебель</a>
+										<ul class="inner2-list">
+											<li class="inner2__item">
+												<a class="inner2__item-link" href="#">Диваны</a>
+											</li>
+											<li class="inner2__item">
+												<a class="inner2__item-link" href="#">Пуфики</a>
+											</li>
+											<li class="inner2__item">
+												<a class="inner2__item-link" href="#">Кресла</a>
+											</li>
+										</ul>
+									</li>
+									<li class="inner__item">
+										<a class="inner__item-link open" href="#">Мебель для спальни</a>
+										<ul class="inner2-list">
+											<li class="inner2__item">
+												<a class="inner2__item-link" href="#">Кровати</a>
+											</li>
+											<li class="inner2__item">
+												<a class="inner2__item-link" href="#">Трюмо</a>
+											</li>
+											<li class="inner2__item">
+												<a class="inner2__item-link" href="#">Шкафы-купе</a>
+											</li>
+										</ul>
+									</li>
+									<li class="inner__item">
+										<a class="inner__item-link" href="#">Мебель для гостиной</a>
+									</li>
+								</ul>
+							</li>
+						</ul><!-- //.sitebar-list -->
+					</div><!-- //.col -->
+				</div><!-- //.row -->
+			</div><!-- //.container -->
+		</section><!-- //.main -->
+
+		<section class="ribbon">
+			<div class="container">
+				<div class="row">
+					<h2 class="ribbon__head">
+						Возможно Вас заинтересуют следующие товары
+					</h2>
+					<div class="ribbon-slider">
+						<a href="#" class="ribbon__item">
+							<div class="ribbon__item-img">
+								<img src="img/img_1.jpg" alt="img_desc">
+							</div>
+							<div class="ribbon__item-desc">
+								Книжный шкаф Calligaris Lib, Double-sided tall bookcase, Finish glossy white and Glass smoked grey
+							</div>
+							<div class="ribbon__item-articul">
+								PN: AE113AWBPJG1C7BK3D01
+							</div>
+							<div class="ribbon__item-price">
+								<div class="price__new">68 269,<sup>uah</sup></div>
+							</div>
+						</a>
+						<a href="#" class="ribbon__item">
+							<div class="ribbon__item-img">
+								<img src="img/img_2.jpg" alt="img_desc">
+							</div>
+							<div class="ribbon__item-desc">
+								Пуф Calligaris Candy, Plastic matt light green and Fabric smoke grey
+							</div>
+							<div class="ribbon__item-articul">
+								PN: AE113AWBPJG1C7BK3D01
+							</div>
+							<div class="ribbon__item-price">
+								<div class="price__new">68 269,<sup>uah</sup></div>
+							</div>
+						</a>
+						<a href="#" class="ribbon__item">
+							<div class="ribbon__item-img">
+								<img src="img/img_3.jpg" alt="img_desc">
+							</div>
+							<div class="ribbon__item-desc">
+								Подставка для ног Calligaris Lazy Ottoman, Metal matt taupe and Kama fabric taupe
+							</div>
+							<div class="ribbon__item-articul">
+								PN: AO9CDV70+
+							</div>
+							<div class="ribbon__item-price">
+								<div class="price__new active">46 470,<sup>uah</sup></div>
+								<div class="price__old">68 269,<sup>uah</sup></div>
+							</div>
+						</a>
+						<a href="#" class="ribbon__item">
+							<div class="ribbon__item-img">
+								<img src="img/img_4.jpg" alt="img_desc">
+							</div>
+							<div class="ribbon__item-desc">
+								Кресло Wagner AluMedic Limited S Comfort, Black
+							</div>
+							<div class="ribbon__item-articul">
+								PN: AE113AWBPJG1C7BK3D01
+							</div>
+							<div class="ribbon__item-price">
+								<div class="price__new">68 269,<sup>uah</sup></div>
+							</div>
+						</a>
+						<a href="#" class="ribbon__item">
+							<div class="ribbon__item-img">
+								<img src="img/img_1.jpg" alt="img_desc">
+							</div>
+							<div class="ribbon__item-desc">
+								Книжный шкаф Calligaris Lib, Double-sided tall bookcase, Finish glossy white and Glass smoked grey
+							</div>
+							<div class="ribbon__item-articul">
+								PN: AE113AWBPJG1C7BK3D01
+							</div>
+							<div class="ribbon__item-price">
+								<div class="price__new">68 269,<sup>uah</sup></div>
+							</div>
+						</a>
+					</div><!-- //.ribbon-slider -->
+				</div><!-- //.row -->
+			</div><!-- //.container -->
+		</section><!-- //.ribbon -->
+
+		<!-- popup -->
+
+		<div id="callback" class="zoom-anim-dialog mfp-hide">
+			<h2>Обратный звонок</h2>
+			<p>Мы обязательно позвоним и ответим на Ваши вопросы</p>
+		</div><!-- //#callback -->
+
+		<div id="order" class="zoom-anim-dialog mfp-hide">
+			<h2>Быстрый заказ</h2>
+			<p>Спасибо Вам что выбрали наш магазин</p>
+		</div><!-- //#order -->
+
+
+		<script src="js/libs.min.js"></script>
+		<script src="js/common.js"></script>
+	</body>
+</html>

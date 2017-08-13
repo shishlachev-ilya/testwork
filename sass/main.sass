@@ -1,0 +1,599 @@
+@import '_normalize'
+@import '_popup'
+@import '_vars'
+
+ul
+	margin: 0
+	padding: 0
+	li
+		list-style-type: none
+
+a
+	text-decoration: none
+	&:hover, &:focus, &:active, &:visited
+		text-decoration: none
+
+body
+	background: #fff
+	font-family: 'Open Sans', sans-serif
+	font-size: 16px
+	line-height: 1.2
+	color: $text_1
+
+	
+.header__top
+	background: $bg
+	.header__list
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		.list__item
+			font-size: 16px
+			position: relative
+			&-link
+				display: block
+				padding: 13px 0
+				font-size: 0.875em
+				color: $text_1
+				padding-right: 15px
+			.dropdown
+				background: url(../img/sitebar_down.png) no-repeat center right
+				&:hover
+					background: url(../img/sitebar_top.png) no-repeat center right
+			.link-btn
+				padding: 7px 18px
+				background: $main
+				color: #fff
+				border-radius: 50px
+				&:hover
+					background: darken($main, 15%)
+			.innerList
+				display: none
+				position: absolute
+				top: 100%
+				left: 0
+				padding: 10px 0
+				background: $bg
+				z-index: 100
+				&__item
+					font-size: 16px
+					&:hover
+						background: darken($bg, 10%)
+					&-link
+						display: inline-block
+						padding: 5px 20px
+						font-size: 0.875em
+						color: $text_1
+			&:hover .dropdown
+				background: url(../img/sitebar_top.png) no-repeat center right
+			&:hover .innerList
+				display: block
+		
+
+.header__menu
+	.menu__list
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		.menu__item
+			position: relative
+			&-link
+				display: inline-block
+				padding: 9px 15px 9px 0
+				span
+					color: $text_1
+			.dropdown
+				background: url(../img/sitebar_down.png) no-repeat center right
+				&:hover
+					background: url(../img/sitebar_top.png) no-repeat center right
+			.innerList
+				display: none
+				position: absolute
+				top: 100%
+				left: 0
+				padding: 10px 0
+				background: $bg
+				z-index: 100
+				&__item
+					font-size: 16px
+					&:hover
+						background: darken($bg, 10%)
+					&-link
+						display: inline-block
+						padding: 5px 20px
+						font-size: 0.875em
+						color: $text_1
+			&:hover .dropdown
+				background: url(../img/sitebar_top.png) no-repeat center right		
+			&:hover .innerList
+				display: block
+
+.header__info
+	padding: 22px 0
+	.header__logo
+		padding-left: 15px
+	.header__schedule
+		.schedule__title
+			padding: 10px 0
+			font-size: 0.938em
+			font-weight: 300
+		.schedule__day
+			font-size: 0.938em
+	.header__call
+		margin-left: -30px
+		.call
+			padding: 10px 0
+			&__link
+				color: $text_1
+				font-size: 0.938em
+				font-weight: 300
+				border-bottom: 1px solid $text_1
+				&:hover
+					color: $main
+					border-color: $main
+		.phone__number
+			font-size: 0.938em
+
+.nav
+	background: $bg
+	&__list
+		display: flex
+		flex-direction: row
+		justify-content: space-around
+		.nav__item
+			display: inline-block
+			&-link
+				display: block
+				padding: 15px 0
+				text-align: center
+				font-size: 16px
+				border-top: 3px solid transparent
+				font-size: 0.938em
+				color: $text_1
+				&:hover
+					border-color: $main
+				.nav__item-icon
+					margin: 0 auto
+					width: 40px
+					height: 40px
+					background: url(../img/spr.png)
+					background-repeat: no-repeat
+				.nav__item-title
+					padding-top: 16px
+					font-size: 0.938em
+			.furniture
+				.nav__item-icon
+					background-position: 1px -45px
+				&:hover .nav__item-icon
+					background-position: 1px -6px
+			.kitchen
+				.nav__item-icon
+					background-position: -38px -43px
+				&:hover .nav__item-icon
+					background-position: -38px -1px
+			.home
+				.nav__item-icon
+					background-position: -78px -43px
+				&:hover .nav__item-icon
+					background-position: -78px -1px
+			.light
+				.nav__item-icon
+					background-position: -120px -43px
+				&:hover .nav__item-icon
+					background-position: -120px -1px
+			.clock
+				.nav__item-icon
+					background-position: -160px -44px
+				&:hover .nav__item-icon
+					background-position: -160px -4px
+			.style
+				.nav__item-icon
+					background-position: -198px -44px
+				&:hover .nav__item-icon
+					background-position: -198px -3px
+			.rest
+				.nav__item-icon
+					background-position: -239px -44px
+				&:hover .nav__item-icon
+					background-position: -239px -1px
+			.world
+				.nav__item-icon
+					background-position: -283px -44px
+				&:hover .nav__item-icon
+					background-position: -282px -4px
+
+.breadcrumbs
+	padding: 30px 0
+	&__list
+		padding-left: 10px
+	&__item
+		display: inline-block
+		vertical-align: middle
+		&:before
+			content: ''
+			display: inline-block
+			vertical-align: middle
+			width: 15px
+			height: 5px
+			background: url(../img/arrow_right.png) no-repeat center
+			margin: 0 5px
+		&:first-child:before
+			display: none
+	&__link
+		color: $text_2
+		font-size: 0.938em
+		&:hover
+			color: $main
+	.active
+		color: $text_1
+
+.main
+	background: #fff
+.title
+	padding-top: 30px
+	padding-bottom: 40px
+	&__head
+		margin: 0
+		padding-bottom: 20px
+		font-size: 1.875em
+		color: $text_3
+		font-weight: 400
+	&__code
+		display: block
+		font-size: 0.875em
+		color: $text_2
+		font-weight: 400
+.price
+	padding-bottom: 28px
+	display: inline-block
+	vertical-align: middle
+	&__new
+		display: inline-block
+		font-size: 2.500em
+		color: $main
+		font-weight: 300
+		sup
+			text-transform: uppercase
+			font-size: 0.6em
+	&__old
+		display: inline-block
+		padding-left: 10px
+		font-size: 1.125em
+		color: $text_3
+		font-weight: 300
+		text-decoration: line-through
+		sup
+			display: inline-block
+			text-transform: uppercase
+			text-decoration: none
+			font-size: 0.6em
+.button
+	display: inline-block
+	vertical-align: middle
+	padding-bottom: 28px
+	padding-left: 28px
+	&__pay
+		display: inline-block
+		padding: 17px 60px 17px 25px
+		background: $main url(../img/arrow_down.png) no-repeat center right 15px
+		border-radius: 10px
+		font-size: 1em
+		color: #fff
+		font-weight: 400
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			right: 38px
+			width: 1px
+			height: 48px
+			background: #d1192c
+		&:after
+			content: ''
+			position: absolute
+			top: 0
+			right: 37px
+			width: 1px
+			height: 48px
+			background: #f15767
+		&:hover
+			color: #fff
+			background: darken($main, 15%) url(../img/arrow_down.png) no-repeat center right 15px
+	&__order
+		display: inline-block
+		margin-left: 10px
+		padding: 17px 22px
+		border-radius: 10px
+		border: 1px solid #000
+		color: $text_4
+		font-weight: 400
+		&:hover
+			color: $main
+			border-color: $main
+
+.slider
+	float: left
+	max-width: 560px
+	&__item
+		width: 100%
+		img
+			display: block
+			width: 100%
+.sliderNav
+	float: left
+	margin-left: 25px
+	max-width: 75px
+	background: #f5f8fa
+	padding: 22px 10px
+	&__item
+		width: 100%
+		margin: 5px 0
+		cursor: pointer
+		img
+			display: block
+			width: 100%
+
+	
+	.slick-current
+		border: 1px solid #1486cc
+	.slick-next
+		content: ''
+		width: 20px
+		height: 20px
+		top: 15px
+		left: 28px
+		background: url(../img/slider-up.png) no-repeat center
+	.slick-prev
+		content: ''
+		width: 20px
+		height: 20px
+		top: 386px
+		left: 28px
+		background: url(../img/slider-down.png) no-repeat
+
+.sub__menu
+	max-width: 660px
+	margin-top: 17px
+	border: 1px solid #000
+	border-radius: 10px	
+	.sub__item
+		display: inline-block
+		width: 25%
+		margin-left: -4px
+		font-size: 16px
+		border-right: 1px solid #000
+		&:last-child
+			border-right: none
+		&-link
+			display: block
+			padding: 13px 0
+			text-align: center
+			font-size: 0.875em
+			color: $text_4
+			font-weight: 400
+			&:hover
+				color: $main
+.social
+	margin-top: 20px
+	&__item
+		display: inline-block
+
+.tab__wrapper
+	.tab__menu
+		margin-top: 28px
+		.tab__item
+			display: inline-block
+			width: 25%
+			padding: 13px 0
+			margin-left: -4px
+			text-align: center
+			border-bottom: 1px solid #ccc
+			font-size: 1.125em
+			color: #000
+			font-weight: 300
+			cursor: pointer
+			&-icon
+				display: none
+		.is-active
+			color: $main
+			border-color: $main
+			font-weight: 600
+.tab__content
+	padding-top: 40px
+	padding-bottom: 50px
+	.content__item
+		color: $text_3
+		font-weight: 400
+		line-height: 1.5
+		padding-right: 50px
+
+.download
+	&__list
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		flex-wrap: wrap
+	&__item
+		width: 50%
+		display: flex
+		// flex-basis: 50%
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		&-link
+			margin-right: 45px
+			margin-bottom: 20px
+			padding-left: 58px
+			padding-bottom: 6px
+			padding-top: 6px
+			font-size: 0.875em
+			color: $text_3
+			font-weight: 400
+			color: #0271c7
+			background: url(../img/pdf_icon.png) no-repeat center left
+			span
+				display: inline-block
+				color: #000
+			&:hover span
+				color: #000
+				text-decoration: none
+			&:hover
+				color: #0271c7
+				text-decoration: underline
+
+.sitebar
+	padding-top: 30px
+	.button
+		padding-left: 0
+		&__order
+			padding-left: 33px
+			padding-right: 33px
+			margin-left: 0
+
+.sitebar-list
+	.list__item
+		display: inline-block
+		&-link
+			display: inline-block
+			color: #000
+			font-weight: 400
+			font-size: 1.125em
+			padding-right: 25px
+			margin-bottom: 15px
+			background: url(../img/sitebar_down.png) no-repeat center right
+			&:hover
+				color: $main
+		.inner-list
+			display: none
+			.inner__item
+				display: inline-block
+				&-link
+					display: inline-block
+					color: #000
+					font-weight: 400
+					font-size: 0.875em
+					padding-right: 25px
+					margin-bottom: 15px
+					background: url(../img/sitebar_down.png) no-repeat center right
+					&:hover
+						color: $main
+					&:last-child
+						background: none
+				.top
+					background: url(../img/sitebar_top.png) no-repeat center right
+				.inner2-list
+					display: none
+					.inner2__item
+						display: block
+						&-link
+							display: block
+							margin-bottom: 15px
+							color: #666666
+							font-weight: 400
+							font-size: 0.875em
+							padding-right: 25px
+							&:hover
+								color: $main
+			& > li:hover > a
+				color: $main
+	& > li:hover > a
+		color: $main
+	.top
+		background: url(../img/sitebar_top.png) no-repeat center right
+		
+.ribbon
+	padding-top: 60px
+	padding-bottom: 110px
+	&__head
+		margin: 0
+		padding-bottom: 35px
+		font-weight: 300
+		color: $text_3
+		font-size: 2.188em
+	&-slider
+		border-left: 1px solid #ccc
+		margin-left: -1px
+	&__item
+		display: inline-block
+		border: 1px solid #ccc
+		margin-left: -1px
+		padding: 0px 25px
+		&-img
+			height: 330px
+			position: relative
+			img
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				max-width: 100%
+				text-align: center
+				margin: auto
+		&-desc
+			min-height: 90px
+			color: $text_3
+			font-weight: 400
+		&-articul
+			font-size: 0.750em
+			color: $text_2
+			font-weight: 400
+		&-price
+			padding-top: 13px
+			padding-bottom: 30px
+			.price__new
+				display: inline-block
+				vertical-align: top
+				color: $text_3
+				font-size: 1.750em
+				font-weight: 300
+			.price__old
+				display: inline-block
+				vertical-align: top
+				padding-left: 15px
+				color: $text_3
+				font-weight: 300
+				font-size: 1.250em
+			.active
+				color: $main
+		&:first-child
+			margin-left: -1px
+	.slick-slide
+		outline: none
+	.slick-prev
+		top: -49px
+		left: 1030px
+		width: 25px
+		height: 30px
+		background: url(../img/slider-left.png) no-repeat center
+		&:after
+			content: ''
+			position: absolute
+			top: 2px
+			left: 49px
+			height: 25px
+			width: 1px
+			background: $text_4
+	.slick-next
+		top: -49px
+		right: 30px
+		width: 25px
+		height: 30px
+		background: url(../img/slider-right.png) no-repeat center
+
+
+
+#callback, #order
+	background: white
+	padding: 20px 30px
+	text-align: left
+	max-width: 400px
+	margin: 40px auto
+	position: relative
+
+@import 'media_970'
+@import 'media_750'
+@import 'media_320'

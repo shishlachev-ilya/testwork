@@ -1,0 +1,161 @@
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 750px; }
+  .mobile__logo {
+    display: none; }
+  .mobile__menu {
+    height: 42px;
+    line-height: 42px; }
+    .mobile__menu .burger {
+      display: inline-block;
+      vertical-align: middle;
+      width: 30px;
+      height: 2px;
+      background: #000;
+      cursor: pointer;
+      position: relative; }
+      .mobile__menu .burger:before {
+        content: '';
+        position: absolute;
+        top: -4px;
+        left: 0;
+        width: 30px;
+        height: 2px;
+        background: #000; }
+      .mobile__menu .burger:after {
+        content: '';
+        position: absolute;
+        top: 4px;
+        left: 0;
+        width: 15px;
+        height: 2px;
+        background: #000; }
+  .header__info {
+    border-bottom: 1px solid #ccc; }
+    .header__info .header__call {
+      margin-left: 0; }
+  .breadcrumbs {
+    padding: 0; }
+  .ribbon__head {
+    font-size: 2.1em; }
+  .ribbon-slider {
+    margin-left: -4px; }
+  .ribbon__item {
+    padding: 0 18px;
+    min-height: 556px; }
+    .ribbon__item-desc {
+      min-height: 110px; }
+    .ribbon__item-price .price__old {
+      padding-left: 0; }
+  .ribbon .slick-next {
+    top: -90px;
+    right: 10px; }
+  .ribbon .slick-prev {
+    top: -90px;
+    left: 670px; }
+    .ribbon .slick-prev:after {
+      top: 2px;
+      left: 35px; }
+  .mobile__list {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #f0f3f8;
+    height: 100vh;
+    width: 100%;
+    -webkit-animation: open 0.2s ease;
+            animation: open 0.2s ease; }
+    .mobile__list .mobile__item {
+      display: inline-block; }
+      .mobile__list .mobile__item-link {
+        display: inline-block;
+        color: #0f0f0f;
+        margin: 10px 0; }
+    .mobile__list .dropdown {
+      padding-right: 15px;
+      background: url(../img/sitebar_down.png) no-repeat center right; }
+    .mobile__list .innerList {
+      display: none; }
+      .mobile__list .innerList__item-link {
+        display: inline-block;
+        color: #000;
+        margin: 5px 0; }
+  .visible {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 999;
+    -webkit-transform: translate(0%);
+        -ms-transform: translate(0%);
+            transform: translate(0%); }
+  .close {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 30px;
+    height: 20px; }
+    .close:before {
+      content: '';
+      position: absolute;
+      top: 9px;
+      left: -1px;
+      -webkit-transform: rotate(22deg);
+          -ms-transform: rotate(22deg);
+              transform: rotate(22deg);
+      width: 33px;
+      height: 2px;
+      background: #000; }
+    .close:after {
+      content: '';
+      position: absolute;
+      top: 9px;
+      left: -1px;
+      -webkit-transform: rotate(-22deg);
+          -ms-transform: rotate(-22deg);
+              transform: rotate(-22deg);
+      width: 33px;
+      height: 2px;
+      background: #000; }
+  @-webkit-keyframes open {
+    0% {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%); }
+    100% {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%); } }
+  @keyframes open {
+    0% {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%); }
+    100% {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%); } }
+  @-webkit-keyframes hid {
+    0% {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%); }
+    100% {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%); } }
+  @keyframes hid {
+    0% {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%); }
+    100% {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%); } } }

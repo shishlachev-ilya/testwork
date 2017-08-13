@@ -1,0 +1,255 @@
+@import '_vars'
+@media (min-width: 320px) and (max-width: 767px)
+	.container
+		width: 100%
+		padding-left: 30px
+		padding-right: 30px
+	
+	.mobile__logo
+		display: inline-block
+	.mobile__menu
+		display: inline-block
+		height: 42px
+		line-height: 42px
+		margin-left: 10px
+		.burger
+			display: inline-block
+			vertical-align: middle
+			width: 30px
+			height: 2px
+			background: #000
+			cursor: pointer
+			position: relative
+			&:before
+				content: ''
+				position: absolute
+				top: -4px
+				left: 0
+				width: 30px
+				height: 2px
+				background: #000
+			&:after
+				content: ''
+				position: absolute
+				top: 4px
+				left: 0
+				width: 15px
+				height: 2px
+				background: #000
+	.mobile__list
+		display: none
+		position: fixed
+		top: 0px
+		left: 0
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		background: $bg
+		height: 100vh
+		width: 100%
+		animation: open 0.2s ease
+		.mobile__item
+			display: inline-block
+			&-link
+				display: inline-block
+				color: $text_3
+				margin: 10px 0
+		.dropdown
+			padding-right: 15px
+			background: url(../img/sitebar_down.png) no-repeat center right
+		
+		.innerList
+			display: none
+			&__item
+				&-link
+					display: inline-block
+					color: #000
+					margin: 5px 0
+
+	.visible
+		display: flex
+		z-index: 999
+		transform: translate(0%)
+	.close
+		position: absolute
+		top: 15px
+		left: 20px
+		width: 30px
+		height: 20px
+		
+		&:before
+			content: ''
+			position: absolute
+			top: 9px
+			left: -1px
+			transform: rotate(22deg)
+			width: 33px
+			height: 2px
+			background: #000
+		&:after
+			content: ''
+			position: absolute
+			top: 9px
+			left: -1px
+			transform: rotate(-22deg)
+			width: 33px
+			height: 2px
+			background: #000
+
+
+	@keyframes open
+		0%
+			transform: translateX(-100%)
+		100%
+			transform: translateX(0%)
+	@keyframes hid
+		0%
+			transform: translateX(0%)
+		100%
+			transform: translateX(-100%)
+
+	.breadcrumbs, .header__info
+		padding: 0
+	.title
+		&__head
+			font-size: 1.250em
+			text-align: center
+		&__code
+			text-align: center
+	.price
+		display: block
+		text-align: center
+		&__new
+			display: block
+		&__old
+			display: block
+	.button
+		padding-left: 0
+		display: flex
+		flex-direction: row
+		justify-content: center
+		&__pay
+			padding-left: 15px
+			padding-right: 50px
+			&:before, &:after
+				height: 55px
+		&__order
+			padding-left: 15px
+			padding-right: 15px
+	.slider
+		float: none
+		max-width: 100%
+		&__item
+			width: 100%
+	.sliderNav
+		float: none
+		margin-left: 0
+		height: 65px
+		padding: 10px 27px
+		max-width: 100%
+		overflow: hidden
+		&:after
+			content: ''
+			display: table
+			clear: both
+		.sliderNav__item
+			height: 37px
+			width: 25%
+			position: relative
+			overflow: hidden
+			img
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				margin: auto
+				max-width: 100%
+				max-height: 100%
+		.slick-next
+			top: 22px
+			left: 1px
+			transform: rotate(-90deg)
+		.slick-prev
+			top: 22px
+			left: 95%
+			transform: rotate(-90deg)
+
+
+	.sub__menu
+		border: none
+		width: 100%
+		.sub__item
+			width: 50%
+			margin-bottom: 6px
+			border: none
+			&:nth-child(odd)
+				margin-left: 0
+				border: 1px solid #000
+				border-radius: 10px 0 0 10px 
+			&:nth-child(even)
+				margin-left: -5px
+				border: 1px solid #000
+				border-radius: 0 10px 10px 0 
+	
+	.social
+		text-align: center
+	.tab__wrapper
+		.tab__menu
+			.tab__item
+				width: 17%
+				&-icon
+					display: block
+					margin: auto
+				&-title
+					display: none
+			.is-active
+				width: 49%
+		.tab__content
+			.content__item
+				padding-left: 8px
+				padding-right: 0
+	.download
+		&__list
+			flex-direction: column
+		&__item
+			width: 100%
+			&-link
+				margin-right: 0
+
+
+
+
+
+	.ribbon
+		&__head
+			font-size: 1.9em
+			text-align: center
+		&-slider
+			margin-left: -4px
+		&__item
+			padding: 0 18px
+			min-height: 556px
+			text-align: center
+			&-desc
+				min-height: 100px
+			&-price
+				.price__old
+					padding-left: 0
+					padding-top: 10px
+					display: block
+		.slick-next
+			width: 49%
+			margin-left: 1%
+			background: #eff3f7 url(../img/slider-right.png) no-repeat center
+			height: 65px
+			top: 106%
+			right: 0px
+		.slick-prev
+			width: 49%
+			background: #eff3f7 url(../img/slider-left.png) no-repeat center
+			height: 65px
+			top: 106%
+			left: 0px
+			&:after
+				display: none
